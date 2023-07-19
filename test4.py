@@ -5,46 +5,46 @@
 # message and skip to the next number.
 
 
-# def is_float(input):
-#     try:
-#         float(input)
-#         return True
-#     except ValueError:
-#         return False
+def is_float(input):
+    try:
+        float(input)
+        return True
+    except ValueError:
+        return False
 
 
-# def check_valid_input(prompt):
-#     while True:
-#         user_input = input(prompt)
-#         if user_input == "done":
-#             return 'done'
+def check_valid_input(prompt):
+    while True:
+        user_input = input(prompt)
+        if user_input == "done":
+            return 'done'
         
-#         if not is_float(user_input):
-#             print("Invalid Input! Please enter a number!")
-#         else:
-#             return float(user_input)
+        if not is_float(user_input):
+            print("Invalid Input! Please enter a number!")
+        else:
+            return float(user_input)
 
 
-# def calculate_sum(number):
-#     count = len(number)
-#     total = sum(number)
-#     if count > 0:
-#         average = total / count
-#         print(average)
-#         print(total)
-#         print(count)
-#     else:
-#         print("No number was entered!")
+def calculate_sum(number):
+    count = len(number)
+    total = sum(number)
+    if count > 0:
+        average = total / count
+        print(average)
+        print(total)
+        print(count)
+    else:
+        print("No number was entered!")
 
 
-# numbers = []
-# while True:
-#     number = check_valid_input("Please enter a number or 'done' to terminate: ")
-#     if number == 'done':
-#         break
-#     numbers.append(number)
+numbers = []
+while True:
+    number = check_valid_input("Please enter a number or 'done' to terminate: ")
+    if number == 'done':
+        break
+    numbers.append(number)
     
-# calculate_sum(numbers)
+calculate_sum(numbers)
 
     
 
